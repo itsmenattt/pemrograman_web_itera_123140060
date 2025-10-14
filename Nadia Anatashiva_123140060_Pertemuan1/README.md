@@ -7,16 +7,16 @@ Aplikasi web sederhana yang dirancang untuk membantu mahasiswa dalam mengelola d
 Berikut adalah beberapa tampilan dari aplikasi:
 
 **1. Tampilan Utama & Form Tambah Tugas**
-![Tampilan Utama](Nadia Anatashiva_123140060_Pertemuan1\image\tampilan-utama.png)
+![Tampilan Utama](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_Pertemuan1/image/tampilan-utama.png)
 
 **2. Daftar Tugas dengan Filter**
-![Daftar Tugas dan Filter](Nadia Anatashiva_123140060_Pertemuan1\image\daftar-tugas-dan-filtering.png)
+![Daftar Tugas dan Filter](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_Pertemuan1/image/daftar-tugas-dan-filtering.png)
 
 **3. Button Selesai, Batal, Edit, dan Hapus**
-![Edit dan Validasi](Nadia Anatashiva_123140060_Pertemuan1\image\edit-form.png)
+![Edit dan Validasi](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_Pertemuan1/image/edit-form.png)
 
 **4. Validasi form (contoh notifikasi)**
-![Edit dan Validasi](Nadia Anatashiva_123140060_Pertemuan1\image\validasi-form.png)
+![Edit dan Validasi](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_Pertemuan1/image/validasi-form.png)
 
 ## 🚀 Cara Menjalankan Aplikasi
 
@@ -287,4 +287,5 @@ Validasi dilakukan di sisi klien menggunakan JavaScript sebelum data tugas disim
         - Menambahkan instruksi singkat untuk menjalankan server lokal lain (mis. Live Server extension).
 
         Beritahu saya pilihan Anda dan saya akan lanjutkan.
+
 
