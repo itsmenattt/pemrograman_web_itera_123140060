@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #6a4c9c; /* Ungu yang lebih dalam */
+    --primary-hover-color: #5b408a; /* Versi lebih gelap untuk hover */
+    --secondary-color: #f0edf4; /* Latar belakang abu-abu lavender sangat terang */
+    --text-color: #3f3552; /* Warna teks ungu tua */
+    --border-color: #d8cfe3; /* Warna border ungu muda */
+    --success-color: #4dc2c4; /* Hijau mint yang lembut */
+    --danger-color: #e76c6c; /* Merah koral yang lembut */
+    --bg-color: #ffffff;
+    --shadow-color: rgba(106, 76, 156, 0.2); /* Bayangan dengan hint ungu */
+    --completed-text-color: #887a9e; /* Warna teks lebih gelap untuk tugas selesai */
+    --completed-bg-color: #e0dbe8; /* Latar belakang untuk tugas selesai */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-container, .task-manager {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--shadow-color);
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.filter-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex-grow: 1;
+}
+
+.task-stats {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.task-item.completed {
+    background-color: var(--completed-bg-color);
+    border-left-color: var(--completed-text-color);
+}
+
+.task-item:hover {
+     box-shadow: 0 2px 8px var(--shadow-color);
+     transform: translateY(-2px);
+}
+
+.task-info {
+    flex-grow: 1;
+}
+
+.task-item.completed .task-info {
+    text-decoration: line-through; /* Hanya info tugas yang dicoret */
+    color: var(--completed-text-color);
+}
+
+.task-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: inherit; /* Menggunakan warna dari parent (task-info) */
+}
+
+.task-info p {
+    margin: 0;
+    font-size: 14px;
+    color: inherit; /* Menggunakan warna dari parent (task-info) */
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.btn-complete {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.btn-delete {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.task-actions button:hover {
+    opacity: 0.8;
+}
+
+/* === Gaya untuk Modal Edit === */
+
+.modal {
+    display: none; /* Modal disembunyikan secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang gelap transparan */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Tombol edit baru di item tugas */
+.btn-edit {
+    background-color: #f0ad4e; /* Warna oranye untuk edit */
+    color: white;
+}

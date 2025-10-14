@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Tugas Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Manajemen Tugas Kuliah</h1>
+            <p>Atur semua tugas kuliahmu di satu tempat!</p>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h2>📝 Tambah Tugas Baru</h2>
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="task-name">Nama Tugas</label>
+                        <input type="text" id="task-name" placeholder="Contoh: Mengerjakan Laporan Praktikum" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course-name">Mata Kuliah</label>
+                        <input type="text" id="course-name" placeholder="Contoh: Pengembangan Web" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-deadline">Deadline</label>
+                        <input type="date" id="task-deadline" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Tambah Tugas</button>
+                </form>
+            </div>
+
+            <div class="task-manager">
+                <h2>📚 Daftar Tugas Anda</h2>
+                <div class="filter-container">
+                    <input type="text" id="search-input" placeholder="Cari berdasarkan nama atau matkul...">
+                    <select id="filter-status">
+                        <option value="all">Semua Status</option>
+                        <option value="incomplete">Belum Selesai</option>
+                        <option value="completed">Selesai</option>
+                    </select>
+                </div>
+                <div class="task-stats">
+                    <p>Jumlah tugas belum selesai: <span id="incomplete-count">0</span></p>
+                </div>
+                <ul id="task-list">
+                    </ul>
+            </div>
+        </main>
+    </div>
+
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>✏️ Edit Tugas</h2>
+            <form id="edit-form">
+                <input type="hidden" id="edit-task-id">
+                <div class="form-group">
+                    <label for="edit-task-name">Nama Tugas</label>
+                    <input type="text" id="edit-task-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-course-name">Mata Kuliah</label>
+                    <input type="text" id="edit-course-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-task-deadline">Deadline</label>
+                    <input type="date" id="edit-task-deadline" required>
+                </div>
+                <button type="submit" class="btn-submit">Simpan Perubahan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
