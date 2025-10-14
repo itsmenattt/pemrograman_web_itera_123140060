@@ -77,27 +77,8 @@ Validasi dilakukan di sisi klien menggunakan JavaScript sebelum data tugas disim
 
         Sebuah aplikasi web sederhana (HTML/CSS/JavaScript) untuk membantu mahasiswa mencatat dan mengelola tugas kuliah: menambah tugas, mengedit, menandai selesai/belum, menghapus, mencari, dan memfilter berdasarkan status. Semua data disimpan di browser pengguna menggunakan localStorage, sehingga tidak diperlukan server.
 
-        ## Preview / Screenshot
-
-        Letakkan minimal 3 screenshot di folder `images/` (buat folder `TUGAS1/images/`) dan beri nama `screenshot-1.png`, `screenshot-2.png`, `screenshot-3.png`. Contoh referensi di bawah — ganti file/filepath jika Anda menggunakan nama lain.
-
-        1) Tampilan utama & form tambah tugas
-        ![Tampilan Utama](Nadia Anatashiva_123140060_Pertemuan1\image\tampilan-utama.png)
-
-        2) Daftar tugas + filter & hasil pencarian
-        ![Daftar Tugas dan Filter](Nadia Anatashiva_123140060_Pertemuan1\image\daftar-tugas-dan-filtering.png)
-
-        3) Edit form (Selesai, Batal, Edit, dan Hapus)
-        ![Edit dan Validasi](Nadia Anatashiva_123140060_Pertemuan1\image\edit-form.png)
-
-        4) Validasi form (contoh notifikasi)
-        ![Edit dan Validasi]([Nadia Anatashiva_123140060_Pertemuan1\image\validasi-form.png](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_Pertemuan1/image/validasi-form.png))
-
-        Jika Anda belum membuat screenshot, buka `index.html` di browser, ambil screenshot dari bagian-bagian yang ingin ditunjukkan, lalu simpan ke `TUGAS1/images/` dengan nama di atas.
-
-        ## Cara Menjalankan Aplikasi
-
-        1. Pastikan file berikut berada di folder `TUGAS1/`: `index.html`, `style.css`, `script.js`.
+        # Cara Menjalankan Aplikasi
+        1. Pastikan file berikut berada di folder `NamaFolder/`: `index.html`, `style.css`, `script.js`.
         2. Buka `index.html` di browser (double-click atau klik kanan -> Open with -> pilih browser seperti Chrome/Edge/Firefox).
         3. Aplikasi akan berjalan langsung tanpa instalasi.
 
@@ -278,15 +259,3 @@ Validasi dilakukan di sisi klien menggunakan JavaScript sebelum data tugas disim
         - `deleteTask(id)`: hapus tugas dari array, lalu simpan dan render.
         - `openEditModal(id)` / `updateTask(...)`: buka modal untuk edit lalu perbarui tugas.
         - `renderTasks()`: tampilkan daftar tugas sesuai filter/pencarian dan hitung jumlah tugas belum selesai.
-
-        ---
-
-        Jika Anda ingin, saya bisa:
-
-        - Membuat folder `TUGAS1/images/` dan menambahkan 3 gambar placeholder kecil agar README menampilkan gambar secara langsung.
-        - Menambahkan instruksi singkat untuk menjalankan server lokal lain (mis. Live Server extension).
-
-        Beritahu saya pilihan Anda dan saya akan lanjutkan.
-
-
-
