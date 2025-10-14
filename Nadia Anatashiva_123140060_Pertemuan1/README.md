@@ -91,7 +91,7 @@ Validasi dilakukan di sisi klien menggunakan JavaScript sebelum data tugas disim
         ![Edit dan Validasi](Nadia Anatashiva_123140060_Pertemuan1\image\edit-form.png)
 
         4) Validasi form (contoh notifikasi)
-        ![Edit dan Validasi](Nadia Anatashiva_123140060_Pertemuan1\image\validasi-form.png)
+        ![Edit dan Validasi]([Nadia Anatashiva_123140060_Pertemuan1\image\validasi-form.png](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_Pertemuan1/image/validasi-form.png))
 
         Jika Anda belum membuat screenshot, buka `index.html` di browser, ambil screenshot dari bagian-bagian yang ingin ditunjukkan, lalu simpan ke `TUGAS1/images/` dengan nama di atas.
 
@@ -287,5 +287,6 @@ Validasi dilakukan di sisi klien menggunakan JavaScript sebelum data tugas disim
         - Menambahkan instruksi singkat untuk menjalankan server lokal lain (mis. Live Server extension).
 
         Beritahu saya pilihan Anda dan saya akan lanjutkan.
+
 
 
