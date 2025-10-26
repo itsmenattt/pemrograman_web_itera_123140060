@@ -35,6 +35,7 @@ Tambahkan screenshot ke folder `assets/` lalu gunakan path di sini.
 ## Struktur Proyek (ringkasan)
 
 ```
+Nadia Anatashiva_123140060_pertemuan2/
 src/
 	├─ app.js
 	├─ authManager.js
@@ -47,6 +48,7 @@ assets/
 	└─ (gambar & aset lain)
 index.html
 src/style.css
+README.md
 ```
 
 ## Cara Menjalankan (lokal)
@@ -78,6 +80,7 @@ Letakkan lisensi yang Anda inginkan di sini (mis. MIT). Jika belum, tambahkan `L
 
 
 Terima kasih telah menggunakan/proyek ini — jika ingin bantuan menambahkan badge, GitHub Actions, atau dokumentasi tambahan, beri tahu saya!
+
 
 
 
