@@ -16,9 +16,9 @@ Tambahkan screenshot ke folder `assets/` lalu gunakan path di sini.
 - Halaman Home (3 kolom): `assets/screenshot-home.png`
 - Halaman Life Index: `assets/screenshot-life-index.png`
 
-![Login](Nadia Anatashiva_123140060_pertemuan2/assets/home-page.png)
-![Home](assets/screenshot-home.png)
-![Life Index](assets/screenshot-life-index.png)
+![Login](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_pertemuan2/assets/login-page.png)
+![Home](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_pertemuan2/assets/home-page.png)
+![Life Index](https://github.com/itsmenattt/pemrograman_web_itera_123140060/blob/main/Nadia%20Anatashiva_123140060_pertemuan2/assets/life-index-page.png)
 
 > Jika belum ada gambar, hapus baris gambar atau ganti dengan screenshot Anda.
 
@@ -78,6 +78,7 @@ Letakkan lisensi yang Anda inginkan di sini (mis. MIT). Jika belum, tambahkan `L
 
 
 Terima kasih telah menggunakan/proyek ini — jika ingin bantuan menambahkan badge, GitHub Actions, atau dokumentasi tambahan, beri tahu saya!
+
 
 
 
