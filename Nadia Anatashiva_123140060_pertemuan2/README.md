@@ -16,7 +16,7 @@ Tambahkan screenshot ke folder `assets/` lalu gunakan path di sini.
 - Halaman Home (3 kolom): `assets/screenshot-home.png`
 - Halaman Life Index: `assets/screenshot-life-index.png`
 
-![Login]([Uploading image.png…])
+![Login](Uploading image.png…)
 ![Home](assets/screenshot-home.png)
 ![Life Index](assets/screenshot-life-index.png)
 
@@ -78,4 +78,5 @@ Letakkan lisensi yang Anda inginkan di sini (mis. MIT). Jika belum, tambahkan `L
 
 
 Terima kasih telah menggunakan/proyek ini — jika ingin bantuan menambahkan badge, GitHub Actions, atau dokumentasi tambahan, beri tahu saya!
+
 
