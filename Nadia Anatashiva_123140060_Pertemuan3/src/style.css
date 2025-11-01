@@ -1,0 +1,298 @@
+/* ==== Google Font Import ==== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* === Palet Warna Ungu yang Lembut === */
+:root {
+    --primary-purple: #8E7CC3;
+    --secondary-purple: #DCD6F7;
+    --dark-purple: #4A4A7F;
+    --bg-color: #F8F7FF;
+    --card-bg-color: #FFFFFF;
+    --text-color: #4A4A4A;
+    --light-text-color: #888;
+    --border-radius: 12px;
+    --box-shadow: 0 8px 25px rgba(142, 124, 195, 0.15);
+}
+
+/* ==== General Styling ==== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: var(--primary-purple);
+    font-weight: 600;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* ==== Navbar Layout ==== */
+.navbar {
+    background-color: var(--secondary-purple);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: var(--primary-purple);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-out;
+}
+
+.nav-links:hover {
+    color: var(--primary-purple);
+    border-bottom: 3px solid var(--primary-purple);
+}
+
+.nav-user {
+    font-weight: 500;
+    margin-left: 20px;
+    color: var(--primary-purple);
+}
+
+/* ==== Header Section ==== */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/perpustakaan.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 3em;
+}
+
+/* ==== Content Cards ==== */
+main section {
+    background-color: var(--card-bg-color);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(142, 124, 195, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tombol Kembali di BeritaDetail */
+.back-button {
+    background-color: var(--secondary-purple);
+    color: var(--primary-purple);
+    border: 1px solid var(--primary-purple);
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.back-button:hover {
+    background-color: var(--primary-purple);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ==== [DIPERBARUI] Footer Layout Ringkas ==== */
+.site-footer {
+    background-color: var(--dark-purple);
+    color: var(--secondary-purple);
+    padding: 10px 0 0; /* Padding atas dikurangi */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-widget {
+    margin-bottom: 5px; /* Margin bawah dikurangi */
+}
+
+.site-footer h3 {
+    color: white;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 5px; /* Margin bawah dikurangi */
+    font-weight: 600;
+}
+
+.site-footer p {
+    color: var(--secondary-purple);
+    margin-bottom: 15px;
+    opacity: 0.8;
+    font-size: 0.9rem; /* Ukuran font sedikit dikecilkan */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; /* Margin bawah dikurangi */
+}
+
+.contact-item img {
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--secondary-purple);
+    opacity: 0.8;
+    font-size: 0.9rem; /* Ukuran font sedikit dikecilkan */
+}
+
+.footer-links li {
+    margin-bottom: 8px; /* Margin bawah dikurangi */
+}
+
+.footer-links a {
+    color: var(--secondary-purple);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.contact-item a {
+    color: var(--secondary-purple);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: color 0.3s, opacity 0.3s;
+    font-size: 0.9rem; /* Ukuran font sedikit dikecilkan */
+}
+
+.contact-item a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 10px; /* Padding dikurangi */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    outline: none;
+}
+
+.subscribe-form button {
+    padding: 10px 18px; /* Padding dikurangi */
+    border: none;
+    background-color: var(--primary-purple);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.subscribe-form button:hover {
+    background-color: #6A5ACD;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0; /* Padding dikurangi */
+    margin-top: 5px; /* Margin atas dikurangi */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--secondary-purple);
+    opacity: 0.7;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8rem; /* Ukuran font dikecilkan */
+}
