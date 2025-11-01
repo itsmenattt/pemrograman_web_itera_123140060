@@ -1,16 +1,58 @@
-# React + Vite
+# 📚 UTS Pemrograman Web — UPA Perpustakaan ITERA GK2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*NIM:* 123140060
+*Nama:* Nadia Anatashiva
 
-Currently, two official plugins are available:
+Aplikasi ini adalah implementasi sistem perpustakaan berbasis React (Vite) yang dibuat untuk memenuhi Ujian Tengah Semester mata kuliah Pemrograman Web. Proyek ini mendemonstrasikan penggunaan komponen React, hooks, context, routing, dan data fetching.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✅ Status Kelengkapan Fitur
 
-## React Compiler
+Ringkasan fitur yang telah diimplementasikan:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Komponen, Props, dan State: ✅ Minimal 5 komponen fungsional; penggunaan PropTypes pada SectionCard.jsx.
+- React Hooks: ✅ Custom hook (useFetch.js), useMemo, useCallback, useRef (sesuai kebutuhan komponen).
+- Data Fetching: ✅ Fetch API dengan penanganan loading & error (useFetch.js).
+- Routing: ✅ React Router dengan dynamic route /berita/:postId, navigasi programatis (useNavigate), dan halaman 404 (NotFound.jsx).
+- State Management: ✅ Context API (AuthContext.jsx) untuk state pengguna global.
 
-## Expanding the ESLint configuration
+## 🛠 Persiapan & Instalasi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Aplikasi menggunakan Vite. Ikuti langkah di bawah untuk menjalankan aplikasi secara lokal.
+
+1) Klon repositori
+
+bash
+git clone https://github.com/<username_anda>/uts_pemrograman_web_123140060.git
+cd uts_pemrograman_web_123140060
+
+
+2) Instal dependensi
+
+bash
+npm install
+
+
+3) Jalankan development server
+
+bash
+npm run dev
+
+
+Aplikasi akan tersedia di http://localhost:5173/ (default Vite).
+
+## 📂 Struktur Proyek (Ringkas)
+
+uts_pemrograman_web_123140060/
+
+- public/
+	- assets/       # gambar dan aset statis
+- src/
+	- components/   # Navbar, Footer, SectionCard, dll.
+	- context/      # AuthContext.jsx
+	- hooks/        # useFetch.js
+	- pages/        # Beranda, Berita, BeritaDetail, NotFound
+	- App.jsx       # routing utama
+	- main.jsx      # entry point & provider
+	- style.css     # styling global
+- index.html
+- package.json
