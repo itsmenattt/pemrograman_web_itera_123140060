@@ -1,62 +1,80 @@
-# Program Pengelolaan Nilai Mahasiswa
+# 🎓 Student Grade Manager
 
-Program ini adalah aplikasi berbasis Command Line Interface (CLI) sederhana yang ditulis dalam bahasa Python untuk membantu pengelolaan data nilai mahasiswa. Program ini dapat menghitung nilai akhir berdasarkan bobot tertentu, menentukan grade huruf, dan menyediakan berbagai fitur analisis data dasar.
+![Python Badge](https://img.shields.io/badge/Made%20with-Python-blue?style=for-the-badge&logo=python)
+![Terminal Badge](https://img.shields.io/badge/Type-CLI%20Application-green?style=for-the-badge)
 
-## Fitur Utama
+Hai! Selamat datang di repositori **Student Grade Manager**. 👋
 
-Program ini memiliki menu interaktif dengan fitur-fitur berikut:
+Ini adalah program Python sederhana berbasis CLI (Command Line Interface) yang dirancang untuk membantu dosen atau asisten praktikum 👨‍🏫 dalam mengelola dan menghitung nilai mahasiswa dengan cepat dan akurat. Tidak perlu lagi hitung manual satu per satu!
 
-1.  **Tampilkan Data**: Melihat seluruh data mahasiswa dalam format tabel yang rapi.
-2.  **Tambah Data**: Menginput data mahasiswa baru (Nama, NIM, Nilai UTS, UAS, Tugas) dengan validasi input angka.
-3.  **Cari Nilai Ekstrem**: Menampilkan mahasiswa dengan nilai tertinggi dan terendah di kelas.
-4.  **Filter Grade**: Mencari dan menampilkan daftar mahasiswa berdasarkan grade tertentu (misal: hanya grade 'A').
-5.  **Rata-rata Kelas**: Menghitung nilai rata-rata akhir dari seluruh mahasiswa.
+---
 
-## Formula Penilaian
+## ✨ Fitur Unggulan
 
-Nilai akhir dihitung dengan bobot sebagai berikut:
+Program ini dilengkapi dengan menu interaktif yang mudah digunakan:
 
-  * **UTS**: 30%
-  * **UAS**: 40%
-  * **Tugas**: 30%
+* 📋 **Tampilkan Data Lengkap**
+    Melihat seluruh data mahasiswa dalam format tabel yang rapi dan mudah dibaca.
+* ➕ **Tambah Mahasiswa Baru**
+    Input data mahasiswa dengan validasi otomatis (anti error saat salah input angka!).
+* 🏆 **Cari Juara Kelas**
+    Otomatis menemukan siapa pemilik nilai tertinggi dan terendah di kelas.
+* 🔍 **Filter Grade**
+    Ingin tahu siapa saja yang dapat 'A'? Fitur ini solusinya.
+* 📊 **Statistik Kelas**
+    Menghitung rata-rata performa kelas dalam sekali klik.
 
+---
+
+## 📝 Sistem Penilaian
+
+Program ini menggunakan bobot persentase standar untuk menentukan nilai akhir dan grade huruf.
+
+### ⚖️ Bobot Nilai
+| Komponen | Bobot |
+| :--- | :--- |
+| **UTS** | 30% |
+| **UAS** | 40% |
+| **Tugas** | 30% |
+
+Rumus perhitungan:
 $$Nilai Akhir = (UTS \times 0.30) + (UAS \times 0.40) + (Tugas \times 0.30)$$
 
-Kriteria Grade:
+### 🔠 Konversi Grade
+* ✅ **A** : $\geq$ 80
+* ✅ **B** : $\geq$ 70
+* ✅ **C** : $\geq$ 60
+* ⚠️ **D** : $\geq$ 50
+* ❌ **E** : $<$ 50
 
-  * **A**: $\geq$ 80
-  * **B**: $\geq$ 70
-  * **C**: $\geq$ 60
-  * **D**: $\geq$ 50
-  * **E**: $<$ 50
+---
 
-## Cara Menjalankan Program
+## 🚀 Cara Menjalankan
 
-### Prasyarat
+Sangat mudah! Pastikan kamu sudah menginstal **Python 3.x** di komputermu.
 
-  * Python 3.x terinstal di sistem Anda.
-
-### Langkah-langkah
-
-1.  Simpan kode program dalam file bernama `main.py` (atau nama lain yang diinginkan).
-2.  Buka terminal atau command prompt.
-3.  Jalankan perintah berikut:
+1.  **Clone atau Download** repositori ini.
+2.  Buka terminal/CMD di folder proyek.
+3.  Jalankan perintah:
     ```bash
     python main.py
     ```
+4.  Program siap digunakan! 🎉
 
-## Struktur Data
+---
 
-Data mahasiswa disimpan sementara dalam `list` of `dictionary`. Setiap entri mahasiswa memiliki struktur awal:
+## 📂 Struktur Data
+
+Untuk yang penasaran dengan *behind the scene*-nya, data mahasiswa disimpan dalam bentuk `list of dictionaries` seperti ini:
 
 ```python
-{
-    'nama': 'Nama Mahasiswa',
-    'NIM': '123456',
-    'nilai_uts': 80,
-    'nilai_uas': 85,
-    'nilai_tugas': 90
-}
-```
-
-Program akan secara otomatis menambahkan *key* `'nilai_akhir'` dan `'grade'` setelah data diproses.
+[
+    {
+        'nama': 'Budi Santoso',
+        'NIM': '123140001',
+        'nilai_uts': 80,
+        'nilai_uas': 85,
+        'nilai_tugas': 90,
+        # 'nilai_akhir' dan 'grade' akan dihitung otomatis oleh program
+    }
+]
