@@ -1,4 +1,3 @@
-````markdown
 # Sistem Manajemen Inventaris Skincare
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python&logoColor=white)
@@ -88,9 +87,9 @@ classDiagram
     SkincareItem <|-- Serum : Inherits
     SkincareItem <|-- Moisturizer : Inherits
     SkincareStore o-- SkincareItem : Aggregates
-````
+```
 
------
+---
 
 ## Cara Menjalankan Program
 
@@ -104,7 +103,7 @@ classDiagram
     python main.py
     ```
 
------
+---
 
 ## Contoh Output Program
 
@@ -129,39 +128,39 @@ Berikut adalah tampilan interaksi program saat dijalankan:
 Berikut adalah dokumentasi visual dari jalannya program dan fitur-fitur utama:
 
 ### Interface Menu Utama
-```
-![Menu Utama](./screenshots/menu_utama.png)
-```
+
+![Menu Utama](https://github.com/user-attachments/assets/eed445a4-078e-4624-b29a-81c46e189e44)
+
 *Keterangan: Tampilan menu utama dengan pilihan CRUD dan pencarian*
 
 ### Menambah Produk Baru
-```
-![Tambah Produk](./screenshots/tambah_produk.png)
-```
+
+![Tambah Produk](https://github.com/user-attachments/assets/d064ed4e-2f68-44be-9476-1b5efe061281)
+
 *Keterangan: Proses penambahan produk Serum atau Moisturizer baru*
 
 ### Daftar Inventaris
-```
-![Daftar Inventaris](./screenshots/daftar_inventaris.png)
-```
+
+![Daftar Inventaris](https://github.com/user-attachments/assets/b12d972a-dfbc-4409-8c0d-a33104dd1852)
+
 *Keterangan: Tampilan lengkap semua produk dengan ID, stok, dan harga*
 
 ### Fitur Pencarian
-```
-![Pencarian Produk](./screenshots/pencarian_produk.png)
-```
+
+![Pencarian Produk](https://github.com/user-attachments/assets/8d7184ca-d0f6-4c73-b743-62b196461e58)
+
 *Keterangan: Hasil pencarian berdasarkan nama, brand, atau ID barang*
 
 ### Update Stok Barang
-```
-![Update Stok](./screenshots/update_stok.png)
-```
+
+![Update Stok](https://github.com/user-attachments/assets/6a25e408-7005-4acf-8d41-abca98af4b20)
+
 *Keterangan: Proses perubahan jumlah stok produk*
 
 ### Validasi Input & Error Handling
-```
-![Error Handling](./screenshots/error_handling.png)
-```
+
+![Error Handling](https://github.com/user-attachments/assets/73f35627-8c9f-49ab-8849-1c3b6650b8e8)
+
 *Keterangan: Sistem validasi ketika input tidak sesuai tipe data*
 
 ---
